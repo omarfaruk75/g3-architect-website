@@ -95,3 +95,33 @@ margin: 0 auto;
 }
    
 }
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.teams-container{
+    display: flex;
+    align-items: center;
+    gap: 4.5rem;
+    padding: 30px 60px ;
+}
+.team-image-container{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, 2fr);
+}
+.teams-title-our{
+color: #131313;
+font-size: 45px;
+font-weight: 700;
+}
+.teams-title-feature{
+    color: #FF900E;
+    font-size: 45px;
+    font-weight: 700;
+}
+.teams-title-quick{
+    color:  #727272;
+    font-size: 45px;
+    font-weight: 500;
+}
