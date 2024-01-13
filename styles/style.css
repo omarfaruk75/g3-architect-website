@@ -13,6 +13,12 @@
     border: 0;
     margin: 2rem auto;
 }
+.common-title-section{
+    color: #131313;
+    font-size: 45px;
+    font-weight: 700;
+}
+
 header{
    background-color: rgba(255, 144, 14, 0.10);
    padding: 50px 240px;
@@ -59,13 +65,11 @@ nav li a{
 }
 .banner-image img{ 
    width: 100%;
+    max-width: 1440px;
+   margin: 0 auto;
+  
    
 }
-.banner-image{
-   /* max-width: 1440px; */
-margin: 0 auto;
-}
-
 
 main{
     max-width: 1440px;
@@ -82,12 +86,7 @@ main{
     gap: 1.5rem;
     grid-template-columns: repeat(2, 2fr);
 }
-.teams-title-our{
-color: #131313;
-font-size: 45px;
-font-weight: 700;
-}
-.teams-title-feature{
+eams-title-feature{
     color: #FF900E;
     font-size: 45px;
     font-weight: 700;
@@ -97,12 +96,69 @@ font-weight: 700;
     font-size: 45px;
     font-weight: 500;
 }
+/* Featured Design Section */
+.featured{
+    display: flex;
+    max-width: 1440px;
+    width: 75%;
+    margin: 130px auto;
+
+}
+#common-title-section-headline{
+    margin-bottom: 1.5rem;
+}
+.featured-design{
+   
+    border-radius: 8px;
+    background-color: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 1.25rem;
+}
+.featured-text-column .featured-design{
+    padding: 30px;
+    max-width: 586px;
+}
+.featured-text-column .featured-design p{
+   margin-top: 10px;
+}
+.featured-image-column img{
+    width: 100%;
+    max-width: 700px;
+    height: 90%;
+    object-fit: cover;
+    margin-left: 90px;
+}
+.featured-image-column-years{
+    max-width: 260px;
+    padding: 1.5rem 0;
+    border-radius: 8px;
+    background-color: #FF900E;
+    color: #FFF;
+    text-align: center;
+     position: relative;
+     bottom: 100px;
+     left: 1.5rem;
+  
+   
+}
+.tenYears{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 70px;
+   
+}
+.experience{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 40px;
+}
+
 /* Responsive nav */
 @media screen and (max-width: 576px){
     header{
         padding: 25px;
         }
-    nav{
+    nav, .featured{
         flex-direction: column;
         margin: 0 auto;
 
@@ -122,13 +178,31 @@ font-weight: 700;
   
     grid-template-columns: 1fr;
 }
+.featured-image-column-years{
+    width: 80%;
+    padding: 1rem;
+    position: static;
+    margin: 0 auto; 
+
+}
+.featured-image-column img{
+    /* width: 80%;
+    max-width: 708px; */
+    margin-left: 0;
+}
+.tenYears{
+    font-size: 2rem;
+    font-weight: 700;
+   
+}
+
     
 }
 @media screen and (min-width: 576px) and (max-width:992px){
    header{
             padding: 50px;
     }
-    nav{
+    nav, .featured{
             flex-direction: column;
   
 }
